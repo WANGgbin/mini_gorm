@@ -23,4 +23,5 @@ func TestSession(t *testing.T) {
 	var p1 person
 	// SELECT * FROM `person` WHERE gender = 'male' AND age > 18 AND `person`.`deleted_at` IS NULL ORDER BY `person`.`id` LIMIT 1
 	newDB.Where("age > ?", 18).First(&p1)
+
 }
